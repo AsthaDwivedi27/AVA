@@ -1,0 +1,96 @@
+body{
+    background-color:black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#AVAHood {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+h5 {
+    color: lightcyan;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 35px;
+  }
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 450px;
+    height: 450px;
+  
+}
+
+.square span:nth-child(1){
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%, hwb(305 0% 32%) 40%);
+    box-shadow: 0 0 50px rgb(0, 247, 255), inset 0 0 50px rgb(25, 0, 255);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate1 6s linear infinite;
+}
+
+.square span:nth-child(2){
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%, hwb(309 0% 32%) 40%);
+    box-shadow: 0 0 50px rgb(0, 247, 255), inset 0 0 50px rgb(25, 0, 255);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 4s linear infinite;
+}
+
+.square span:nth-child(3){
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%, hwb(309 0% 32%) 40%);
+    box-shadow: 0 0 50px rgb(0, 247, 255), inset 0 0 50px rgb(25, 0, 255);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate3 8s linear infinite;
+}
+
+@keyframes animate1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate3 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
