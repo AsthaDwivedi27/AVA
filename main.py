@@ -7,7 +7,7 @@ chatStr = ""
 def chat(query):
     global chatStr
     print(chatStr)
-    openai.api_key = apikey
+    openai.api_key = apikeyyy
     chatStr += f"Harry: {query}\n Jarvis: "
     response = openai.Completion.create(
         model="text-davinci-003",
@@ -97,3 +97,4 @@ if __name__ == '__main__':
         else:
             print("Chatting...")
             chat(query)
+
